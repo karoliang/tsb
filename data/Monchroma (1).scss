@@ -1,0 +1,1097 @@
+
+// Chroma Design System
+// Design Tokens - v1.3.2
+
+$asset-logo-path: "https://assets.chromadesignsystem.com/brands/monochroma/logos";
+$asset-logo-dark-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg"; // Coloured logo - used on light backgrounds
+$asset-logo-dark-xs-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg"; // Mobile specific logo
+$asset-logo-light-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg"; // White logo - used on dark backgrounds
+$asset-logo-light-xs-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg"; // Mobile specific logo
+$asset-font-path: "https://assets.chromadesignsystem.com/fonts";
+$asset-favicon-path: "https://assets.chromadesignsystem.com/brands/monochroma/favicon";
+$asset-favicon-16x16: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon-16x16.png";
+$asset-favicon-32x32: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon-32x32.png";
+$asset-favicon-android-chrome-192x192: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/android-chrome-192x192.png";
+$asset-favicon-android-chrome-512x512: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/android-chrome-512x512.png";
+$asset-favicon-apple-touch: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/apple-touch-icon.png";
+$asset-favicon-ico: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon.ico";
+$asset-favicon-manifest: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/site.webmanifest";
+$asset-icon-chroma-regular-url: "https://assets.chromadesignsystem.com/icons/chroma/regular/icons.css";
+$asset-icon-chroma-light-url: "https://assets.chromadesignsystem.com/icons/chroma/light/icons.css";
+$asset-icon-chroma-solid-url: "https://assets.chromadesignsystem.com/icons/chroma/solid/icons.css";
+$asset-icon-platform-url: "https://assets.chromadesignsystem.com/icons/product/icons.css";
+$asset-icon-brand-url: "";
+$brand-name: monochroma;
+$color-background-white: #ffffff;
+$color-background-black: #121212;
+$color-background-primary: #383e44;
+$color-background-primary-light: #f5f5f6;
+$color-background-secondary: #76848f;
+$color-background-secondary-light: #f8f9f9;
+$color-background-accent: #8a8a8a;
+$color-background-accent-light: #f9f9f9;
+$color-background-error: #da0000;
+$color-background-error-light: #fdf2f2;
+$color-background-warning: #e96a20;
+$color-background-warning-light: #f2a679;
+$color-background-success: #47810e;
+$color-background-success-light: #f6f9f3;
+$color-background-information: #2d799f;
+$color-background-information-light: #81afc5;
+$color-border-default: #909194;
+$color-border-light: #f0f2f7;
+$color-border-focus: #383e44;
+$color-border-primary: #383e44;
+$color-border-primary-light: #888b8f;
+$color-border-secondary: #76848f;
+$color-border-secondary-light: #adb5bc;
+$color-border-accent: #8a8a8a;
+$color-border-accent-light: #b9b9b9;
+$color-border-error: #da0000;
+$color-border-error-light: #e96666;
+$color-border-warning: #e96a20;
+$color-border-warning-light: #f2a679;
+$color-border-success: #47810e;
+$color-border-success-light: #91b36e;
+$color-border-information: #2d799f;
+$color-border-information-light: #81afc5;
+$color-foundation-primary-lighter: #f5f5f6; // color.global.brand.primary.50
+$color-foundation-primary-light: #888b8f; // color.global.brand.primary.300
+$color-foundation-primary-default: #383e44; // color.global.brand.primary.500
+$color-foundation-primary-dark: #222529; // color.global.brand.primary.700
+$color-foundation-primary-darker: #0b0c0e; // color.global.brand.primary.900
+$color-foundation-secondary-lighter: #f8f9f9; // color.global.brand.secondary.50
+$color-foundation-secondary-light: #adb5bc; // color.global.brand.secondary.300
+$color-foundation-secondary-default: #76848f; // color.global.brand.secondary.500
+$color-foundation-secondary-dark: #474f56; // color.global.brand.secondary.700
+$color-foundation-secondary-darker: #181a1d; // color.global.brand.secondary.900
+$color-foundation-accent-lighter: #f9f9f9; // color.global.brand.accent.50
+$color-foundation-accent-light: #b9b9b9; // color.global.brand.accent.300
+$color-foundation-accent-default: #8a8a8a; // color.global.brand.accent.500
+$color-foundation-accent-dark: #535353; // color.global.brand.accent.700
+$color-foundation-accent-darker: #1c1c1c; // color.global.brand.accent.900
+$color-foundation-link-lighter: #f4f7fd; // color.global.brand.link.50
+$color-foundation-link-light: #7aa1eb; // color.global.brand.link.300
+$color-foundation-link-default: #2163de; // color.global.brand.link.500
+$color-foundation-link-dark: #143b85; // color.global.brand.link.700
+$color-foundation-link-darker: #07142c; // color.global.brand.link.900
+$color-foundation-neutral-white: #ffffff; // color.global.system.white
+$color-foundation-neutral-lighter: #fcfcfd; // color.global.system.grey.100
+$color-foundation-neutral-light: #f6f7fa; // color.global.system.grey.300
+$color-foundation-neutral-grey: #f0f2f7; // color.global.system.grey.500
+$color-foundation-neutral-dark: #909194; // color.global.system.grey.700
+$color-foundation-neutral-darker: #303031; // color.global.system.grey.900
+$color-foundation-neutral-black: #121212; // color.global.system.black
+$color-foundation-neutral-transparent: rgba(255, 255, 255, 0); // color.global.system.transparent
+$color-foundation-error-lighter: #fdf2f2; // color.global.system.red.50
+$color-foundation-error-light: #e96666; // color.global.system.red.300
+$color-foundation-error-default: #da0000; // color.global.system.red.500
+$color-foundation-error-dark: #830000; // color.global.system.red.700
+$color-foundation-error-darker: #2c0000; // color.global.system.red.900
+$color-foundation-success-lighter: #f6f9f3; // color.global.system.green.50
+$color-foundation-success-light: #91b36e; // color.global.system.green.300
+$color-foundation-success-default: #47810e; // color.global.system.green.500
+$color-foundation-success-dark: #2b4d08; // color.global.system.green.700
+$color-foundation-success-darker: #0e1a03; // color.global.system.green.900
+$color-foundation-warning-lighter: #fef8f4; // color.global.system.orange.50
+$color-foundation-warning-light: #f2a679; // color.global.system.orange.300
+$color-foundation-warning-default: #e96a20; // color.global.system.orange.500
+$color-foundation-warning-dark: #8c4013; // color.global.system.orange.700
+$color-foundation-warning-darker: #2f1506; // color.global.system.orange.900
+$color-foundation-information-lighter: #f4f8fa; // color.global.system.blue.50
+$color-foundation-information-light: #81afc5; // color.global.system.blue.300
+$color-foundation-information-default: #2d799f; // color.global.system.blue.500
+$color-foundation-information-dark: #1b495f; // color.global.system.blue.700
+$color-foundation-information-darker: #091820; // color.global.system.blue.900
+$color-global-brand-primary-50: #f5f5f6;
+$color-global-brand-primary-100: #d7d8da;
+$color-global-brand-primary-200: #afb2b4;
+$color-global-brand-primary-300: #888b8f;
+$color-global-brand-primary-400: #606569;
+$color-global-brand-primary-500: #383e44;
+$color-global-brand-primary-600: #2d3236;
+$color-global-brand-primary-700: #222529;
+$color-global-brand-primary-800: #16191b;
+$color-global-brand-primary-900: #0b0c0e;
+$color-global-brand-primary-950: #030303;
+$color-global-brand-secondary-50: #f8f9f9;
+$color-global-brand-secondary-100: #e4e6e9;
+$color-global-brand-secondary-200: #c8ced2;
+$color-global-brand-secondary-300: #adb5bc;
+$color-global-brand-secondary-400: #919da5;
+$color-global-brand-secondary-500: #76848f;
+$color-global-brand-secondary-600: #5e6a72;
+$color-global-brand-secondary-700: #474f56;
+$color-global-brand-secondary-800: #2f3539;
+$color-global-brand-secondary-900: #181a1d;
+$color-global-brand-secondary-950: #060707;
+$color-global-brand-accent-50: #f9f9f9;
+$color-global-brand-accent-100: #e8e8e8;
+$color-global-brand-accent-200: #d0d0d0;
+$color-global-brand-accent-300: #b9b9b9;
+$color-global-brand-accent-400: #a1a1a1;
+$color-global-brand-accent-500: #8a8a8a;
+$color-global-brand-accent-600: #6e6e6e;
+$color-global-brand-accent-700: #535353;
+$color-global-brand-accent-800: #373737;
+$color-global-brand-accent-900: #1c1c1c;
+$color-global-brand-accent-950: #070707;
+$color-global-brand-link-50: #f4f7fd;
+$color-global-brand-link-100: #d3e0f8;
+$color-global-brand-link-200: #a6c1f2;
+$color-global-brand-link-300: #7aa1eb;
+$color-global-brand-link-400: #4d82e5;
+$color-global-brand-link-500: #2163de; // default
+$color-global-brand-link-600: #1a4fb2;
+$color-global-brand-link-700: #143b85;
+$color-global-brand-link-800: #0d2859;
+$color-global-brand-link-900: #07142c;
+$color-global-brand-link-950: #02050b;
+$color-global-system-black: #121212;
+$color-global-system-white: #ffffff;
+$color-global-system-transparent: rgba(255, 255, 255, 0);
+$color-global-system-grey-50: #fefeff;
+$color-global-system-grey-100: #fcfcfd;
+$color-global-system-grey-200: #f9fafc;
+$color-global-system-grey-300: #f6f7fa;
+$color-global-system-grey-400: #f3f5f9;
+$color-global-system-grey-500: #f0f2f7; // default
+$color-global-system-grey-600: #c0c2c6;
+$color-global-system-grey-700: #909194;
+$color-global-system-grey-800: #606163;
+$color-global-system-grey-900: #303031;
+$color-global-system-grey-950: #0c0c0c;
+$color-global-system-red-50: #fdf2f2;
+$color-global-system-red-100: #f8cccc;
+$color-global-system-red-200: #f09999;
+$color-global-system-red-300: #e96666;
+$color-global-system-red-400: #e13333;
+$color-global-system-red-500: #da0000; // default
+$color-global-system-red-600: #ae0000;
+$color-global-system-red-700: #830000;
+$color-global-system-red-800: #570000;
+$color-global-system-red-900: #2c0000;
+$color-global-system-red-950: #0b0000;
+$color-global-system-green-50: #f6f9f3;
+$color-global-system-green-100: #dae6cf;
+$color-global-system-green-200: #b5cd9f;
+$color-global-system-green-300: #91b36e;
+$color-global-system-green-400: #6c9a3e;
+$color-global-system-green-500: #47810e; // default
+$color-global-system-green-600: #39670b;
+$color-global-system-green-700: #2b4d08;
+$color-global-system-green-800: #1c3406;
+$color-global-system-green-900: #0e1a03;
+$color-global-system-green-950: #040601;
+$color-global-system-orange-50: #fef8f4;
+$color-global-system-orange-100: #fbe1d2;
+$color-global-system-orange-200: #f6c3a6;
+$color-global-system-orange-300: #f2a679;
+$color-global-system-orange-400: #ed884d;
+$color-global-system-orange-500: #e96a20; // default
+$color-global-system-orange-600: #ba551a;
+$color-global-system-orange-700: #8c4013;
+$color-global-system-orange-800: #5d2a0d;
+$color-global-system-orange-900: #2f1506;
+$color-global-system-orange-950: #0c0502;
+$color-global-system-blue-50: #f4f8fa;
+$color-global-system-blue-100: #d5e4ec;
+$color-global-system-blue-200: #abc9d9;
+$color-global-system-blue-300: #81afc5;
+$color-global-system-blue-400: #5794b2;
+$color-global-system-blue-500: #2d799f; // default
+$color-global-system-blue-600: #24617f;
+$color-global-system-blue-700: #1b495f;
+$color-global-system-blue-800: #123040;
+$color-global-system-blue-900: #091820;
+$color-global-system-blue-950: #020608;
+$color-interactive-default-background-color: #ffffff;
+$color-interactive-default-border-color: #909194;
+$color-interactive-default-color: #121212;
+$color-interactive-default-icon: #383e44;
+$color-interactive-hover-background-color: #f5f5f6;
+$color-interactive-hover-border-color: #888b8f;
+$color-interactive-hover-color: #383e44;
+$color-interactive-hover-icon: #383e44;
+$color-interactive-checked-background-color: #383e44;
+$color-interactive-checked-border-color: #383e44;
+$color-interactive-checked-color: #383e44;
+$color-interactive-checked-icon: #ffffff;
+$color-interactive-checked-focus-background-color: #383e44;
+$color-interactive-checked-focus-border-color: #121212;
+$color-interactive-checked-focus-color: #383e44;
+$color-interactive-checked-focus-icon: #ffffff;
+$color-interactive-focus-background-color: #ffffff;
+$color-interactive-focus-border-color: #383e44;
+$color-interactive-focus-color: #383e44;
+$color-interactive-focus-icon: #383e44;
+$color-interactive-disabled-background-color: #f0f2f7;
+$color-interactive-disabled-border-color: #909194;
+$color-interactive-disabled-color: #909194;
+$color-interactive-disabled-icon: #222529;
+$color-interactive-error-background-color: #ffffff;
+$color-interactive-error-border-color: #da0000;
+$color-interactive-error-color: #121212;
+$color-interactive-error-icon: #121212;
+$color-interactive-success-background-color: #ffffff;
+$color-interactive-success-border-color: #47810e;
+$color-interactive-success-color: #121212;
+$color-interactive-success-icon: #121212;
+$color-text-default: #121212;
+$color-text-white: #ffffff;
+$color-text-black: #121212;
+$color-text-light: #303031;
+$color-text-disabled: #909194;
+$color-text-primary: #383e44;
+$color-text-primary-light: #888b8f;
+$color-text-secondary: #76848f;
+$color-text-secondary-light: #adb5bc;
+$color-text-accent: #8a8a8a;
+$color-text-accent-light: #b9b9b9;
+$color-text-error: #da0000;
+$color-text-warning: #e96a20;
+$color-text-success: #47810e;
+$color-text-information: #2d799f;
+$grid-breakpoint-sm: 576px; // tablet
+$grid-breakpoint-md: 768px; // laptop
+$grid-breakpoint-lg: 992px; // desktop
+$grid-breakpoint-xl: 1200px; // desktop / TV
+$grid-max-width-xs: 100%; // mobile
+$grid-max-width-sm: 700px; // tablet
+$grid-max-width-md: 1120px; // laptop
+$grid-max-width-lg: 1120px; // desktop
+$grid-max-width-xl: 1120px; // desktop / TV
+$typography-primary-url: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap';
+$typography-primary-font-family: 'Source Sans Pro', sans-serif;
+$typography-secondary-url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700;900&display=swap';
+$typography-secondary-font-family: 'Roboto', sans-serif;
+$typography-heading-font-family: 'Source Sans Pro', sans-serif;
+$typography-heading-font-weight: 600;
+$typography-heading-color: #121212;
+$typography-heading-line-height: 1.25;
+$typography-heading-url: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap';
+$typography-heading-h1-font-size-xs: 2.375rem; // mobile
+$typography-heading-h1-font-size-sm: 2.375rem; // tablet
+$typography-heading-h1-font-size-md: 3rem; // laptop
+$typography-heading-h1-font-size-lg: 3rem; // desktop
+$typography-heading-h1-line-height-xs: 2.9375rem; // mobile
+$typography-heading-h1-line-height-sm: 2.9375rem; // tablet
+$typography-heading-h1-line-height-md: 3.75rem; // laptop
+$typography-heading-h1-line-height-lg: 3.75rem; // desktop
+$typography-heading-h2-font-size-xs: 1.75rem; // mobile
+$typography-heading-h2-font-size-sm: 1.75rem; // tablet
+$typography-heading-h2-font-size-md: 2.25rem; // laptop
+$typography-heading-h2-font-size-lg: 2.25rem; // desktop
+$typography-heading-h2-line-height-xs: 2.1875rem; // mobile
+$typography-heading-h2-line-height-sm: 2.1875rem; // tablet
+$typography-heading-h2-line-height-md: 2.8125rem; // laptop
+$typography-heading-h2-line-height-lg: 2.8125rem; // desktop
+$typography-heading-h3-font-size-xs: 1.5rem; // mobile
+$typography-heading-h3-font-size-sm: 1.5rem; // tablet
+$typography-heading-h3-font-size-md: 1.75rem; // laptop
+$typography-heading-h3-font-size-lg: 1.75rem; // desktop
+$typography-heading-h3-line-height-xs: 1.875rem; // mobile
+$typography-heading-h3-line-height-sm: 1.875rem; // tablet
+$typography-heading-h3-line-height-md: 2.1875rem; // laptop
+$typography-heading-h3-line-height-lg: 2.1875rem; // desktop
+$typography-heading-h4-font-size-xs: 1.25rem; // mobile
+$typography-heading-h4-font-size-sm: 1.25rem; // tablet
+$typography-heading-h4-font-size-md: 1.5rem; // laptop
+$typography-heading-h4-font-size-lg: 1.5rem; // desktop
+$typography-heading-h4-line-height-xs: 1.5625rem; // mobile
+$typography-heading-h4-line-height-sm: 1.5625rem; // tablet
+$typography-heading-h4-line-height-md: 1.875rem; // laptop
+$typography-heading-h4-line-height-lg: 1.875rem; // desktop
+$typography-heading-h5-font-size-xs: 1.125rem; // mobile
+$typography-heading-h5-font-size-sm: 1.125rem; // tablet
+$typography-heading-h5-font-size-md: 1.25rem; // laptop
+$typography-heading-h5-font-size-lg: 1.25rem; // desktop
+$typography-heading-h5-line-height-xs: 1.375rem; // mobile
+$typography-heading-h5-line-height-sm: 1.375rem; // tablet
+$typography-heading-h5-line-height-md: 1.5625rem; // laptop
+$typography-heading-h5-line-height-lg: 1.5625rem; // desktop
+$typography-heading-h6-font-size-xs: 1rem; // mobile
+$typography-heading-h6-font-size-sm: 1rem; // tablet
+$typography-heading-h6-font-size-md: 1rem; // laptop
+$typography-heading-h6-font-size-lg: 1rem; // desktop
+$typography-heading-h6-line-height-xs: 1.25rem; // mobile
+$typography-heading-h6-line-height-sm: 1.25rem; // tablet
+$typography-heading-h6-line-height-md: 1.25rem; // laptop
+$typography-heading-h6-line-height-lg: 1.25rem; // desktop
+$typography-body-font-family: 'Roboto', sans-serif;
+$typography-body-font-size: 1rem;
+$typography-body-font-weight: 400;
+$typography-body-color: #121212;
+$typography-body-url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700;900&display=swap';
+$typography-body-line-height: 1.5;
+$border-radius-0: 0;
+$border-radius-100: 2px;
+$border-radius-200: 4px;
+$border-radius-300: 8px;
+$border-radius-400: 12px;
+$border-radius-500: 16px;
+$border-radius-600: 32px;
+$border-radius-700: 64px;
+$border-width-0: 0;
+$border-width-100: 1px;
+$border-width-200: 2px;
+$border-width-400: 4px;
+$border-width-800: 8px;
+$box-shadow-100: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+$box-shadow-200: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+$box-shadow-300: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$box-shadow-400: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+$font-size-100: 12px;
+$font-size-200: 14px;
+$font-size-300: 16px;
+$font-size-400: 18px;
+$font-size-500: 20px;
+$font-size-600: 24px;
+$font-size-700: 28px;
+$font-size-800: 38px;
+$font-size-900: 52px;
+$font-size-1000: 64px;
+$font-weight-100: 100; // Thin
+$font-weight-200: 200; // Extra Light
+$font-weight-300: 300; // Light
+$font-weight-400: 400; // Normal
+$font-weight-500: 500; // Medium
+$font-weight-600: 600; // Semi Bold
+$font-weight-700: 700; // Bold
+$font-weight-800: 800; // Extra Bold
+$font-weight-900: 900; // Black
+$line-height-100: 1.25;
+$line-height-200: 1.5;
+$line-height-300: 1.65;
+$line-height-auto: auto;
+$line-height-none: 1;
+$spacing-0: 0;
+$spacing-100: 4px;
+$spacing-200: 8px;
+$spacing-300: 12px;
+$spacing-400: 16px;
+$spacing-500: 20px;
+$spacing-600: 24px;
+$spacing-700: 32px;
+$spacing-800: 40px;
+$spacing-900: 48px;
+$spacing-1000: 56px;
+$spacing-1100: 64px;
+$spacing-1200: 80px;
+$accordion-font-family: 'Roboto', sans-serif;
+$accordion-border: 1px solid #888B8F;
+$accordion-button-font-family: 'Source Sans Pro', sans-serif;
+$accordion-button-font-size: 16px;
+$accordion-button-font-weight: 700;
+$accordion-button-color: #121212;
+$accordion-button-background-color: #ffffff;
+$accordion-button-icon-color: #383e44;
+$accordion-button-icon-font-size: 20px;
+$accordion-button-hover-color: #121212;
+$accordion-button-hover-background-color: #f5f5f6;
+$accordion-button-hover-icon-color: #383e44;
+$accordion-button-focus-color: #121212;
+$accordion-button-focus-background-color: #ffffff;
+$accordion-button-focus-icon-color: #383e44;
+$accordion-button-focus-box-shadow: inset 0 0 0 2px #fff,inset 0 0 0 4px #383e44,inset 0 0 #383e44;
+$accordion-selected-color: #121212;
+$accordion-content-background-color: #fff;
+$alert-font-size: 1rem;
+$alert-padding: 16px;
+$alert-color: #121212;
+$alert-heading-font-family: 'Roboto', sans-serif;
+$alert-heading-font-weight: 600;
+$alert-heading-font-size: 1rem;
+$alert-heading-color: #121212;
+$alert-information-background-color: #f4f8fa;
+$alert-information-icon-color: #2d799f;
+$alert-success-background-color: #f6f9f3;
+$alert-success-icon-color: #47810e;
+$alert-warning-background-color: #fef8f4;
+$alert-warning-icon-color: #e96a20;
+$alert-error-background-color: #fdf2f2;
+$alert-error-icon-color: #da0000;
+$autocomplete-color: #121212;
+$autocomplete-border: 1px solid #909194;
+$autocomplete-background-color: #ffffff;
+$autocomplete-font-size: 16px;
+$autocomplete-font-family: 'Roboto', sans-serif;
+$autocomplete-button-color: #121212;
+$autocomplete-button-clear-background-color: #f0f2f7;
+$autocomplete-button-hover-background-color: #383e44;
+$autocomplete-button-hover-color: #ffffff;
+$autocomplete-button-focus-background-color: #383e44;
+$autocomplete-button-focus-color: #ffffff;
+$autocomplete-button-error-border-color: #da0000;
+$autocomplete-button-error-outline: #da0000;
+$autocomplete-success-border-color: #47810e;
+$autocomplete-success-outline: #47810e;
+$badge-font-size: 14px;
+$badge-font-family: 'Roboto', sans-serif;
+$badge-font-weight: 400;
+$badge-padding: 0.2rem 0.5rem;
+$badge-border-radius: 0.25rem;
+$badge-default-color: #ffffff;
+$badge-default-background-color: #303031;
+$badge-light-color: #121212;
+$badge-light-background-color: #f0f2f7;
+$badge-lighter-color: #121212;
+$badge-lighter-background-color: #f6f7fa;
+$badge-inverse-color: #121212;
+$badge-inverse-background-color: #fcfcfd;
+$badge-primary-color: #ffffff;
+$badge-primary-background-color: #383e44;
+$badge-primary-light-color: #121212;
+$badge-primary-light-background-color: #888b8f;
+$badge-primary-lighter-color: #121212;
+$badge-primary-lighter-background-color: #f5f5f6;
+$badge-secondary-color: #ffffff;
+$badge-secondary-background-color: #76848f;
+$badge-secondary-light-color: #121212;
+$badge-secondary-light-background-color: #adb5bc;
+$badge-secondary-lighter-color: #121212;
+$badge-secondary-lighter-background-color: #f8f9f9;
+$badge-accent-color: #ffffff;
+$badge-accent-background-color: #8a8a8a;
+$badge-accent-light-color: #121212;
+$badge-accent-light-background-color: #b9b9b9;
+$badge-accent-lighter-color: #121212;
+$badge-accent-lighter-background-color: #f9f9f9;
+$badge-information-color: #ffffff;
+$badge-information-background-color: #2d799f;
+$badge-information-light-color: #121212;
+$badge-information-light-background-color: #81afc5;
+$badge-information-lighter-color: #121212;
+$badge-information-lighter-background-color: #f4f8fa;
+$badge-success-color: #ffffff;
+$badge-success-background-color: #47810e;
+$badge-success-light-color: #121212;
+$badge-success-light-background-color: #91b36e;
+$badge-success-lighter-color: #121212;
+$badge-success-lighter-background-color: #f6f9f3;
+$badge-warning-color: #ffffff;
+$badge-warning-background-color: #e96a20;
+$badge-warning-light-color: #121212;
+$badge-warning-light-background-color: #f2a679;
+$badge-warning-lighter-color: #121212;
+$badge-warning-lighter-background-color: #fef8f4;
+$badge-error-color: #ffffff;
+$badge-error-background-color: #da0000;
+$badge-error-light-color: #121212;
+$badge-error-light-background-color: #e96666;
+$badge-error-lighter-color: #121212;
+$badge-error-lighter-background-color: #fdf2f2;
+$banner-background-color: #383e44;
+$banner-color: #ffffff;
+$button-accent-background-color: #8a8a8a;
+$button-accent-border-color: #8a8a8a;
+$button-accent-color: #f9f9f9;
+$button-accent-hover-background-color: #535353;
+$button-accent-hover-border-color: #535353;
+$button-accent-hover-color: #f9f9f9;
+$button-accent-active-background-color: #f9f9f9;
+$button-accent-active-border-color: #8a8a8a;
+$button-accent-active-color: #8a8a8a;
+$button-accent-disabled-background-color: #f9f9f9;
+$button-accent-disabled-border-color: #f9f9f9;
+$button-accent-disabled-color: #b9b9b9;
+$button-accent-focus-outline: 2px solid #8a8a8a;
+$button-accent-outline-background-color: transparent;
+$button-accent-outline-border-color: #8a8a8a;
+$button-accent-outline-color: #8a8a8a;
+$button-accent-outline-hover-background-color: #f9f9f9;
+$button-accent-outline-hover-border-color: #8a8a8a;
+$button-accent-outline-hover-color: #8a8a8a;
+$button-accent-outline-active-background-color: #8a8a8a;
+$button-accent-outline-active-border-color: #8a8a8a;
+$button-accent-outline-active-color: #f9f9f9;
+$button-accent-text-background-color: transparent;
+$button-accent-text-border-color: transparent;
+$button-accent-text-color: #8a8a8a;
+$button-accent-text-hover-background-color: #f9f9f9;
+$button-accent-text-hover-border-color: #f9f9f9;
+$button-accent-text-hover-color: #8a8a8a;
+$button-accent-text-active-background-color: #8a8a8a;
+$button-accent-text-active-border-color: #8a8a8a;
+$button-accent-text-active-color: #f9f9f9;
+$button-accent-inverse-background-color: #f9f9f9;
+$button-accent-inverse-border-color: #f9f9f9;
+$button-accent-inverse-color: #8a8a8a;
+$button-accent-inverse-hover-background-color: #8a8a8a;
+$button-accent-inverse-hover-border-color: #8a8a8a;
+$button-accent-inverse-hover-color: #f9f9f9;
+$button-accent-inverse-active-background-color: #f9f9f9;
+$button-accent-inverse-active-border-color: #f9f9f9;
+$button-accent-inverse-active-color: #8a8a8a;
+$button-accent-inverse-focus-outline: 2px solid #f9f9f9;
+$button-accent-outline-inverse-background-color: transparent;
+$button-accent-outline-inverse-border-color: #f9f9f9;
+$button-accent-outline-inverse-color: #f9f9f9;
+$button-accent-outline-inverse-hover-background-color: #f9f9f9;
+$button-accent-outline-inverse-hover-border-color: #f9f9f9;
+$button-accent-outline-inverse-hover-color: #8a8a8a;
+$button-accent-outline-inverse-active-background-color: #b9b9b9;
+$button-accent-outline-inverse-active-border-color: #b9b9b9;
+$button-accent-outline-inverse-active-color: #f9f9f9;
+$button-accent-text-inverse-background-color: transparent;
+$button-accent-text-inverse-border-color: transparent;
+$button-accent-text-inverse-color: #f9f9f9;
+$button-accent-text-inverse-hover-background-color: #f9f9f9;
+$button-accent-text-inverse-hover-border-color: #f9f9f9;
+$button-accent-text-inverse-hover-color: #8a8a8a;
+$button-accent-text-inverse-active-background-color: #b9b9b9;
+$button-accent-text-inverse-active-border-color: #b9b9b9;
+$button-accent-text-inverse-active-color: #f9f9f9;
+$button-default-background-color: #383E44;
+$button-default-border-color: #383E44;
+$button-default-color: #F5F5F6;
+$button-default-hover-background-color: #222529;
+$button-default-hover-border-color: #222529;
+$button-default-hover-color: #F5F5F6;
+$button-default-active-background-color: #F5F5F6;
+$button-default-active-border-color: #383E44;
+$button-default-active-color: #383E44;
+$button-default-disabled-background-color: #F5F5F6;
+$button-default-disabled-border-color: #F5F5F6;
+$button-default-disabled-color: #888B8F;
+$button-default-focus-outline: 2px solid #383E44;
+$button-default-outline-background-color: transparent;
+$button-default-outline-border-color: #383E44;
+$button-default-outline-color: #383E44;
+$button-default-outline-hover-background-color: #F5F5F6;
+$button-default-outline-hover-border-color: #383E44;
+$button-default-outline-hover-color: #383E44;
+$button-default-outline-active-background-color: #383E44;
+$button-default-outline-active-border-color: #383E44;
+$button-default-outline-active-color: #F5F5F6;
+$button-default-text-background-color: transparent;
+$button-default-text-border-color: transparent;
+$button-default-text-color: #383E44;
+$button-default-text-hover-background-color: #F5F5F6;
+$button-default-text-hover-border-color: #F5F5F6;
+$button-default-text-hover-color: #383E44;
+$button-default-text-active-background-color: #383E44;
+$button-default-text-active-border-color: #383E44;
+$button-default-text-active-color: #F5F5F6;
+$button-default-inverse-background-color: #F5F5F6;
+$button-default-inverse-border-color: #F5F5F6;
+$button-default-inverse-color: #383E44;
+$button-default-inverse-hover-background-color: #383E44;
+$button-default-inverse-hover-border-color: #383E44;
+$button-default-inverse-hover-color: #F5F5F6;
+$button-default-inverse-active-background-color: #F5F5F6;
+$button-default-inverse-active-border-color: #F5F5F6;
+$button-default-inverse-active-color: #383E44;
+$button-default-inverse-focus-outline: 2px solid #F5F5F6;
+$button-default-outline-inverse-background-color: transparent;
+$button-default-outline-inverse-border-color: #F5F5F6;
+$button-default-outline-inverse-color: #F5F5F6;
+$button-default-outline-inverse-hover-background-color: #F5F5F6;
+$button-default-outline-inverse-hover-border-color: #F5F5F6;
+$button-default-outline-inverse-hover-color: #383E44;
+$button-default-outline-inverse-active-background-color: #888B8F;
+$button-default-outline-inverse-active-border-color: #888B8F;
+$button-default-outline-inverse-active-color: #F5F5F6;
+$button-default-text-inverse-background-color: transparent;
+$button-default-text-inverse-border-color: transparent;
+$button-default-text-inverse-color: #F5F5F6;
+$button-default-text-inverse-hover-background-color: #F5F5F6;
+$button-default-text-inverse-hover-border-color: #F5F5F6;
+$button-default-text-inverse-hover-color: #383E44;
+$button-default-text-inverse-active-background-color: #888B8F;
+$button-default-text-inverse-active-border-color: #888B8F;
+$button-default-text-inverse-active-color: #F5F5F6;
+$button-destructive-background-color: #da0000;
+$button-destructive-border-color: #da0000;
+$button-destructive-color: #fdf2f2;
+$button-destructive-hover-background-color: #830000;
+$button-destructive-hover-border-color: #830000;
+$button-destructive-hover-color: #fdf2f2;
+$button-destructive-active-background-color: #fdf2f2;
+$button-destructive-active-border-color: #da0000;
+$button-destructive-active-color: #da0000;
+$button-destructive-disabled-background-color: #fdf2f2;
+$button-destructive-disabled-border-color: #fdf2f2;
+$button-destructive-disabled-color: #e96666;
+$button-destructive-focus-outline: 2px solid #da0000;
+$button-destructive-outline-background-color: transparent;
+$button-destructive-outline-border-color: #da0000;
+$button-destructive-outline-color: #da0000;
+$button-destructive-outline-hover-background-color: #fdf2f2;
+$button-destructive-outline-hover-border-color: #da0000;
+$button-destructive-outline-hover-color: #da0000;
+$button-destructive-outline-active-background-color: #da0000;
+$button-destructive-outline-active-border-color: #da0000;
+$button-destructive-outline-active-color: #fdf2f2;
+$button-destructive-text-background-color: transparent;
+$button-destructive-text-border-color: transparent;
+$button-destructive-text-color: #da0000;
+$button-destructive-text-hover-background-color: #fdf2f2;
+$button-destructive-text-hover-border-color: #fdf2f2;
+$button-destructive-text-hover-color: #da0000;
+$button-destructive-text-active-background-color: #da0000;
+$button-destructive-text-active-border-color: #da0000;
+$button-destructive-text-active-color: #fdf2f2;
+$button-destructive-inverse-background-color: #fdf2f2;
+$button-destructive-inverse-border-color: #fdf2f2;
+$button-destructive-inverse-color: #da0000;
+$button-destructive-inverse-hover-background-color: #da0000;
+$button-destructive-inverse-hover-border-color: #da0000;
+$button-destructive-inverse-hover-color: #fdf2f2;
+$button-destructive-inverse-active-background-color: #fdf2f2;
+$button-destructive-inverse-active-border-color: #fdf2f2;
+$button-destructive-inverse-active-color: #da0000;
+$button-destructive-inverse-focus-outline: 2px solid #fdf2f2;
+$button-destructive-outline-inverse-background-color: transparent;
+$button-destructive-outline-inverse-border-color: #fdf2f2;
+$button-destructive-outline-inverse-color: #fdf2f2;
+$button-destructive-outline-inverse-hover-background-color: #fdf2f2;
+$button-destructive-outline-inverse-hover-border-color: #fdf2f2;
+$button-destructive-outline-inverse-hover-color: #da0000;
+$button-destructive-outline-inverse-active-background-color: #e96666;
+$button-destructive-outline-inverse-active-border-color: #e96666;
+$button-destructive-outline-inverse-active-color: #fdf2f2;
+$button-destructive-text-inverse-background-color: transparent;
+$button-destructive-text-inverse-border-color: transparent;
+$button-destructive-text-inverse-color: #fdf2f2;
+$button-destructive-text-inverse-hover-background-color: #fdf2f2;
+$button-destructive-text-inverse-hover-border-color: #fdf2f2;
+$button-destructive-text-inverse-hover-color: #da0000;
+$button-destructive-text-inverse-active-background-color: #e96666;
+$button-destructive-text-inverse-active-border-color: #e96666;
+$button-destructive-text-inverse-active-color: #fdf2f2;
+$button-height: 48px;
+$button-font-family: 'Source Sans Pro', sans-serif;
+$button-border-radius: 0;
+$button-border-width: 1px;
+$button-font-weight: 700;
+$button-font-size: 16px;
+$button-text-transform: none;
+$button-padding-right: 1.5rem;
+$button-padding-left: 1.5rem;
+$button-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+$button-link-color: #2163de;
+$button-link-background-color: transparent;
+$button-link-border-radius: 0;
+$button-link-hover-background-color: #f4f7fd;
+$button-link-hover-color: #2163de;
+$button-link-focus-background-color: transparent;
+$button-link-focus-color: #2163de;
+$button-link-active-background-color: #143b85;
+$button-link-active-color: #f4f7fd;
+$button-link-disabled-background-color: #f4f7fd;
+$button-link-disabled-color: #7aa1eb;
+$button-link-inverse-background-color: transparent;
+$button-link-inverse-color: #f4f7fd;
+$button-link-inverse-hover-background-color: #f4f7fd;
+$button-link-inverse-hover-color: #2163de;
+$button-link-inverse-focus-background-color: transparent;
+$button-link-inverse-focus-color: #f4f7fd;
+$button-link-inverse-active-background-color: #f4f7fd;
+$button-link-inverse-active-color: #2163de;
+$button-link-inverse-disabled-background-color: #f4f7fd;
+$button-link-inverse-disabled-color: #7aa1eb;
+$button-primary-background-color: #383e44;
+$button-primary-border-color: #383e44;
+$button-primary-color: #f5f5f6;
+$button-primary-hover-background-color: #222529;
+$button-primary-hover-border-color: #222529;
+$button-primary-hover-color: #f5f5f6;
+$button-primary-active-background-color: #f5f5f6;
+$button-primary-active-border-color: #383e44;
+$button-primary-active-color: #383e44;
+$button-primary-disabled-background-color: #f5f5f6;
+$button-primary-disabled-border-color: #f5f5f6;
+$button-primary-disabled-color: #888b8f;
+$button-primary-focus-outline: 2px solid #383e44;
+$button-primary-outline-background-color: transparent;
+$button-primary-outline-border-color: #383e44;
+$button-primary-outline-color: #383e44;
+$button-primary-outline-hover-background-color: #f5f5f6;
+$button-primary-outline-hover-border-color: #383e44;
+$button-primary-outline-hover-color: #383e44;
+$button-primary-outline-active-background-color: #383e44;
+$button-primary-outline-active-border-color: #383e44;
+$button-primary-outline-active-color: #f5f5f6;
+$button-primary-text-background-color: transparent;
+$button-primary-text-border-color: transparent;
+$button-primary-text-color: #383e44;
+$button-primary-text-hover-background-color: #f5f5f6;
+$button-primary-text-hover-border-color: #f5f5f6;
+$button-primary-text-hover-color: #383e44;
+$button-primary-text-active-background-color: #383e44;
+$button-primary-text-active-border-color: #383e44;
+$button-primary-text-active-color: #f5f5f6;
+$button-primary-inverse-background-color: #f5f5f6;
+$button-primary-inverse-border-color: #f5f5f6;
+$button-primary-inverse-color: #383e44;
+$button-primary-inverse-hover-background-color: #383e44;
+$button-primary-inverse-hover-border-color: #383e44;
+$button-primary-inverse-hover-color: #f5f5f6;
+$button-primary-inverse-active-background-color: #f5f5f6;
+$button-primary-inverse-active-border-color: #f5f5f6;
+$button-primary-inverse-active-color: #383e44;
+$button-primary-inverse-focus-outline: 2px solid #f5f5f6;
+$button-primary-outline-inverse-background-color: transparent;
+$button-primary-outline-inverse-border-color: #f5f5f6;
+$button-primary-outline-inverse-color: #f5f5f6;
+$button-primary-outline-inverse-hover-background-color: #f5f5f6;
+$button-primary-outline-inverse-hover-border-color: #f5f5f6;
+$button-primary-outline-inverse-hover-color: #383e44;
+$button-primary-outline-inverse-active-background-color: #888b8f;
+$button-primary-outline-inverse-active-border-color: #888b8f;
+$button-primary-outline-inverse-active-color: #f5f5f6;
+$button-primary-text-inverse-background-color: transparent;
+$button-primary-text-inverse-border-color: transparent;
+$button-primary-text-inverse-color: #f5f5f6;
+$button-primary-text-inverse-hover-background-color: #f5f5f6;
+$button-primary-text-inverse-hover-border-color: #f5f5f6;
+$button-primary-text-inverse-hover-color: #383e44;
+$button-primary-text-inverse-active-background-color: #888b8f;
+$button-primary-text-inverse-active-border-color: #888b8f;
+$button-primary-text-inverse-active-color: #f5f5f6;
+$button-secondary-background-color: #76848f;
+$button-secondary-border-color: #76848f;
+$button-secondary-color: #f8f9f9;
+$button-secondary-hover-background-color: #474f56;
+$button-secondary-hover-border-color: #474f56;
+$button-secondary-hover-color: #f8f9f9;
+$button-secondary-active-background-color: #f8f9f9;
+$button-secondary-active-border-color: #76848f;
+$button-secondary-active-color: #76848f;
+$button-secondary-disabled-background-color: #f8f9f9;
+$button-secondary-disabled-border-color: #f8f9f9;
+$button-secondary-disabled-color: #adb5bc;
+$button-secondary-focus-outline: 2px solid #76848f;
+$button-secondary-outline-background-color: transparent;
+$button-secondary-outline-border-color: #76848f;
+$button-secondary-outline-color: #76848f;
+$button-secondary-outline-hover-background-color: #f8f9f9;
+$button-secondary-outline-hover-border-color: #76848f;
+$button-secondary-outline-hover-color: #76848f;
+$button-secondary-outline-active-background-color: #76848f;
+$button-secondary-outline-active-border-color: #76848f;
+$button-secondary-outline-active-color: #f8f9f9;
+$button-secondary-text-background-color: transparent;
+$button-secondary-text-border-color: transparent;
+$button-secondary-text-color: #76848f;
+$button-secondary-text-hover-background-color: #f8f9f9;
+$button-secondary-text-hover-border-color: #f8f9f9;
+$button-secondary-text-hover-color: #76848f;
+$button-secondary-text-active-background-color: #76848f;
+$button-secondary-text-active-border-color: #76848f;
+$button-secondary-text-active-color: #f8f9f9;
+$button-secondary-inverse-background-color: #f8f9f9;
+$button-secondary-inverse-border-color: #f8f9f9;
+$button-secondary-inverse-color: #76848f;
+$button-secondary-inverse-hover-background-color: #76848f;
+$button-secondary-inverse-hover-border-color: #76848f;
+$button-secondary-inverse-hover-color: #f8f9f9;
+$button-secondary-inverse-active-background-color: #f8f9f9;
+$button-secondary-inverse-active-border-color: #f8f9f9;
+$button-secondary-inverse-active-color: #76848f;
+$button-secondary-inverse-focus-outline: 2px solid #f8f9f9;
+$button-secondary-outline-inverse-background-color: transparent;
+$button-secondary-outline-inverse-border-color: #f8f9f9;
+$button-secondary-outline-inverse-color: #f8f9f9;
+$button-secondary-outline-inverse-hover-background-color: #f8f9f9;
+$button-secondary-outline-inverse-hover-border-color: #f8f9f9;
+$button-secondary-outline-inverse-hover-color: #76848f;
+$button-secondary-outline-inverse-active-background-color: #adb5bc;
+$button-secondary-outline-inverse-active-border-color: #adb5bc;
+$button-secondary-outline-inverse-active-color: #f8f9f9;
+$button-secondary-text-inverse-background-color: transparent;
+$button-secondary-text-inverse-border-color: transparent;
+$button-secondary-text-inverse-color: #f8f9f9;
+$button-secondary-text-inverse-hover-background-color: #f8f9f9;
+$button-secondary-text-inverse-hover-border-color: #f8f9f9;
+$button-secondary-text-inverse-hover-color: #76848f;
+$button-secondary-text-inverse-active-background-color: #adb5bc;
+$button-secondary-text-inverse-active-border-color: #adb5bc;
+$button-secondary-text-inverse-active-color: #f8f9f9;
+$checkbox-size: 24px;
+$checkbox-border: 2px solid #909194;
+$checkbox-border-radius: 2px;
+$checkbox-color: #121212;
+$checkbox-font-family: 'Roboto', sans-serif;
+$checkbox-font-size: 16px;
+$checkbox-focus-outline: 2px solid #383e44;
+$checkbox-error-border-color: #da0000;
+$checkbox-checked-background-color: #383e44;
+$checkbox-checked-border-color: #383e44;
+$checkbox-hover-background-color: #f5f5f6;
+$checkbox-hover-border-color: #888b8f;
+$checkbox-disabled-color: #909194;
+$checkbox-disabled-background-color: #f0f2f7;
+$checkbox-disabled-border-color: #909194;
+$container-max-width-xs: 100%; // mobile viewport
+$container-max-width-sm: 700px; // tablets
+$container-max-width-md: 1120px; // laptops
+$container-max-width-lg: 1120px; // desktops
+$container-max-width-xl: 1120px; // desktops / TVs
+$container-padding-xs: 0 1rem; // mobile viewport
+$container-padding-sm: 0 1rem; // tablets
+$container-padding-md: 0 1rem; // laptops
+$container-padding-lg: 0 1rem; // desktops
+$container-padding-xl: 0 1rem; // desktops / TVs
+$datepicker-height: 48px;
+$datepicker-color: #121212;
+$datepicker-border: 1px solid #909194;
+$datepicker-border-radius: 0;
+$datepicker-background-color: #ffffff;
+$datepicker-font-family: 'Roboto', sans-serif;
+$datepicker-font-size: 16px;
+$datepicker-hover-background-color: #f5f5f6;
+$datepicker-hover-border-color: #888b8f;
+$datepicker-hover-color: #383e44;
+$datepicker-disabled-background-color: #f0f2f7;
+$datepicker-disabled-border-color: #909194;
+$datepicker-disabled-color: #909194;
+$datepicker-error-border-color: #da0000;
+$datepicker-success-border-color: #47810e;
+$datepicker-calendar-icon-color: #383e44;
+$datepicker-calendar-month-color: #121212;
+$datepicker-calendar-week-color: #121212;
+$datepicker-calendar-day-color: #121212;
+$datepicker-calendar-day-hover-background-color: #f5f5f6;
+$datepicker-calendar-day-selected-background-color: #383e44;
+$datepicker-calendar-day-selected-border-color: #383e44;
+$datepicker-calendar-day-selected-color: #ffffff;
+$datepicker-calendar-nav-button-color: #383e44;
+$footer-background-color: #383e44;
+$footer-color: #ffffff;
+$footer-font-family: 'Source Sans Pro', sans-serif;
+$footer-font-size: 14px;
+$footer-padding-xs: 1.5rem 2rem; // mobile viewport
+$footer-padding-sm: 1.5rem 2rem; // tablets
+$footer-padding-md: 1.5rem 2rem; // laptops
+$footer-padding-lg: 1.5rem 2rem; // desktops
+$footer-link-color: #fff;
+$footer-link-font-weight: 400;
+$header-background-color: #383e44;
+$header-box-shadow: none;
+$header-height-xs: 57px; // mobile viewport
+$header-height-sm: 57px; // tablets
+$header-height-md: 80px; // laptops
+$header-height-lg: 113px; // desktops
+$header-padding-xs: 0 1.5rem; // mobile viewport
+$header-padding-sm: 0 2rem; // tablets
+$header-padding-md: 0 2rem; // laptops
+$header-padding-lg: 0 2rem; // desktops
+$header-heading-color: #fff;
+$header-heading-font-size-xs: 20px; // mobile viewport
+$header-heading-font-size-sm: 24px; // tablets
+$header-heading-font-size-md: 28px; // laptops
+$header-heading-font-size-lg: 28px; // desktops
+$header-dark-background-color: #383e44;
+$header-dark-heading-color: #ffffff;
+$header-light-background-color: #ffffff;
+$header-light-heading-color: #121212;
+$icon-font-weight: 400; // 300 (outline) | 400 (regular) | 900 (solid)
+$input-height: 48px;
+$input-color: #121212;
+$input-padding: 0 12px;
+$input-border: 1px solid #909194;
+$input-border-radius: 0;
+$input-background-color: #ffffff;
+$input-font-family: 'Roboto', sans-serif;
+$input-font-size: 16px;
+$input-transition: background-color 0.3s ease, border-color 0.3s ease;
+$input-placeholder-color: #909194;
+$input-hover-background-color: #f5f5f6;
+$input-hover-border-color: #888b8f;
+$input-hover-color: #383e44;
+$input-disabled-border-color: #909194;
+$input-disabled-background-color: #f0f2f7;
+$input-disabled-color: #909194;
+$input-focus-border-color: #383e44;
+$input-focus-background-color: #ffffff;
+$input-focus-color: #383e44;
+$input-focus-outline: 2px solid #383e44;
+$input-error-border-color: #da0000;
+$input-error-outline: #da0000;
+$input-error-background-color: #ffffff;
+$input-error-color: #121212;
+$input-success-border-color: #47810e;
+$input-success-outline: #47810e;
+$input-success-background-color: #ffffff;
+$input-success-color: #121212;
+$label-color: #121212;
+$label-font-size: 16px;
+$label-font-weight: 700;
+$label-font-family: 'Roboto', sans-serif;
+$legend-color: #121212;
+$legend-font-size: 16px;
+$legend-font-weight: 700;
+$legend-font-family: 'Roboto', sans-serif;
+$link-color: #2163de;
+$link-background-color: transparent;
+$link-border-radius: 0;
+$link-hover-background-color: #f4f7fd;
+$link-hover-color: #2163de;
+$link-focus-background-color: transparent;
+$link-focus-color: #2163de;
+$link-focus-outline: 2px solid #07142c;
+$link-active-background-color: #143b85;
+$link-active-color: #f4f7fd;
+$link-disabled-background-color: #f4f7fd;
+$link-disabled-color: #7aa1eb;
+$link-inverse-color: #f4f7fd;
+$link-inverse-background-color: transparent;
+$link-inverse-hover-background-color: #f4f7fd;
+$link-inverse-hover-color: #2163de;
+$link-inverse-focus-background-color: transparent;
+$link-inverse-focus-color: #f4f7fd;
+$link-inverse-focus-outline: 2px solid #f4f7fd;
+$link-inverse-active-background-color: #f4f7fd;
+$link-inverse-active-color: #2163de;
+$link-inverse-disabled-background-color: #f4f7fd;
+$link-inverse-disabled-color: #7aa1eb;
+$loader-color: #383e44;
+$logo-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
+$logo-width: 168px;
+$logo-height: 38px;
+$logo-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
+$logo-xs-width: 168px;
+$logo-xs-height: 38px;
+$logo-light-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
+$logo-light-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
+$logo-dark-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
+$logo-dark-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
+$main-background-color: #ffffff;
+$message-font-family: 'Roboto', sans-serif;
+$message-font-size: 14px;
+$message-information-color: #2d799f;
+$message-success-color: #47810e;
+$message-warning-color: #e96a20;
+$message-error-color: #da0000;
+$modal-background-color: #fff;
+$modal-padding: 32px;
+$modal-border-radius: 0;
+$radio-block-border: 1px solid #909194;
+$radio-block-border-radius: 0;
+$radio-block-color: #121212;
+$radio-block-font-family: 'Roboto', sans-serif;
+$radio-block-font-size: 16px;
+$radio-block-hover-color: #383e44;
+$radio-block-hover-border-color: 1px solid #888b8f;
+$radio-block-hover-background-color: #f5f5f6;
+$radio-block-focus-outline: 2px solid #383e44;
+$radio-block-error-border-color: #da0000;
+$radio-block-disabled-background-color: #f0f2f7;
+$radio-block-disabled-color: #909194;
+$radio-block-disabled-border-color: #909194;
+$radio-block-checked-color: #383e44;
+$radio-block-checked-background-color: #383e44;
+$radio-block-checked-font-weight: 700;
+$radio-block-checked-border-color: #383e44;
+$radio-size: 24px;
+$radio-border: 2px solid #909194;
+$radio-color: #121212;
+$radio-font-family: 'Roboto', sans-serif;
+$radio-font-size: 16px;
+$radio-hover-color: #383e44;
+$radio-hover-border-color: #888b8f;
+$radio-hover-background-color: #f5f5f6;
+$radio-focus-outline: 2px solid #383e44;
+$radio-error-border-color: #da0000;
+$radio-disabled-background-color: #f0f2f7;
+$radio-disabled-color: #909194;
+$radio-disabled-border-color: #909194;
+$radio-checked-background-color: #383e44;
+$radio-checked-font-weight: 700;
+$radio-checked-border-color: #383e44;
+$segmented-control-min-height: 48px;
+$segmented-control-min-width: 7.5rem;
+$segmented-control-padding: 0 .75rem;
+$segmented-control-border: 1px solid #909194;
+$segmented-control-border-radius: 0;
+$segmented-control-color: #121212;
+$segmented-control-font-family: 'Roboto', sans-serif;
+$segmented-control-font-size: 16px;
+$segmented-control-hover-color: #383e44;
+$segmented-control-hover-border-color: #888b8f;
+$segmented-control-hover-background-color: #f5f5f6;
+$segmented-control-focus-border: 2px solid #383e44;
+$segmented-control-error-border-color: #da0000;
+$segmented-control-disabled-background-color: #f0f2f7;
+$segmented-control-disabled-color: #909194;
+$segmented-control-disabled-border-color: #909194;
+$segmented-control-checked-color: #ffffff;
+$segmented-control-checked-background-color: #383e44;
+$segmented-control-checked-font-weight: 700;
+$segmented-control-checked-border-color: #383e44;
+$select-height: 48px;
+$select-color: #121212;
+$select-padding: 0 12px;
+$select-border: 1px solid #909194;
+$select-border-radius: 0;
+$select-background-color: #ffffff;
+$select-font-family: 'Roboto', sans-serif;
+$select-font-size: 16px;
+$select-transition: background-color 0.3s ease, border-color 0.3s ease;
+$select-hover-background-color: #f5f5f6;
+$select-hover-border-color: #888b8f;
+$select-hover-color: #383e44;
+$select-disabled-border-color: #909194;
+$select-disabled-background-color: #f0f2f7;
+$select-disabled-color: #909194;
+$select-focus-border-color: #383e44;
+$select-focus-background-color: #ffffff;
+$select-focus-color: #383e44;
+$select-focus-outline: 2px solid #383e44;
+$select-error-border-color: #da0000;
+$select-error-background-color: #ffffff;
+$select-error-color: #121212;
+$select-success-border-color: #47810e;
+$select-success-background-color: #ffffff;
+$select-success-color: #121212;
+$spinner-stroke: #76848f;
+$spinner-inverse-stroke: #ffffff;
+$spinner-fixed-background: transparent;
+$tab-border-color: #121212;
+$tab-border-width: 1px;
+$tab-button-font-family: 'Roboto', sans-serif;
+$tab-button-font-size: 1rem;
+$tab-button-font-weight: 400;
+$tab-button-color: #121212;
+$tab-content-font-family: 'Roboto', sans-serif;
+$tab-content-font-size: 1rem;
+$tab-content-background-color: #ffffff;
+$tab-content-padding: 16px;
+$tab-content-border-style: none;
+$tab-inactive-color: #121212;
+$tab-inactive-background-color: #f0f2f7;
+$tab-selected-color: #121212;
+$tab-selected-background-color: #ffffff;
+$tab-hover-color: #121212;
+$tab-hover-background-color: #f5f5f6;
+$tab-focus-color: #121212;
+$tab-focus-background-color: #ffffff;
+$tab-focus-box-shadow: inset 0 0 0 2px #fff,inset 0 0 0 4px #383e44,inset 0 0 #383e44;
+$textarea-color: #121212;
+$textarea-padding: 0 12px;
+$textarea-border: 1px solid #909194;
+$textarea-border-radius: 0;
+$textarea-background-color: #ffffff;
+$textarea-font-family: 'Roboto', sans-serif;
+$textarea-font-size: 16px;
+$textarea-transition: background-color 0.3s ease, border-color 0.3s ease;
+$textarea-hover-background-color: #f5f5f6;
+$textarea-hover-border-color: #888b8f;
+$textarea-hover-color: #383e44;
+$textarea-disabled-border-color: #909194;
+$textarea-disabled-background-color: #f0f2f7;
+$textarea-disabled-color: #909194;
+$textarea-focus-border-color: #383e44;
+$textarea-focus-background-color: #ffffff;
+$textarea-focus-color: #383e44;
+$textarea-focus-outline: 2px solid #383e44;
+$textarea-error-border-color: #da0000;
+$textarea-error-outline: #da0000;
+$textarea-error-background-color: #ffffff;
+$textarea-error-color: #121212;
+$textarea-success-border-color: #47810e;
+$textarea-success-outline: #47810e;
+$textarea-success-background-color: #ffffff;
+$textarea-success-color: #121212;
