@@ -1,24 +1,24 @@
 // Chroma Design System
 // Design Tokens - v1.3.2
 
-$asset-logo-path: "https://assets.chromadesignsystem.com/brands/monochroma/logos";
-$asset-logo-dark-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg"; // Coloured logo - used on light backgrounds
-$asset-logo-dark-xs-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg"; // Mobile specific logo
-$asset-logo-light-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg"; // White logo - used on dark backgrounds
-$asset-logo-light-xs-src: "https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg"; // Mobile specific logo
-$asset-font-path: "https://assets.chromadesignsystem.com/fonts";
-$asset-favicon-path: "https://assets.chromadesignsystem.com/brands/monochroma/favicon";
-$asset-favicon-16x16: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon-16x16.png";
-$asset-favicon-32x32: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon-32x32.png";
-$asset-favicon-android-chrome-192x192: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/android-chrome-192x192.png";
-$asset-favicon-android-chrome-512x512: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/android-chrome-512x512.png";
-$asset-favicon-apple-touch: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/apple-touch-icon.png";
-$asset-favicon-ico: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/favicon.ico";
-$asset-favicon-manifest: "https://assets.chromadesignsystem.com/brands/monochroma/favicon/site.webmanifest";
-$asset-icon-chroma-regular-url: "https://assets.chromadesignsystem.com/icons/chroma/regular/icons.css";
-$asset-icon-chroma-light-url: "https://assets.chromadesignsystem.com/icons/chroma/light/icons.css";
-$asset-icon-chroma-solid-url: "https://assets.chromadesignsystem.com/icons/chroma/solid/icons.css";
-$asset-icon-platform-url: "https://assets.chromadesignsystem.com/icons/product/icons.css";
+$asset-logo-path: "https://assets.tsb.co.nz/brands/monochroma/logos";
+$asset-logo-dark-src: "https://assets.tsb.co.nz/brands/monochroma/logos/dark/logo.svg"; // Coloured logo - used on light backgrounds
+$asset-logo-dark-xs-src: "https://assets.tsb.co.nz/brands/monochroma/logos/dark/logo.svg"; // Mobile specific logo
+$asset-logo-light-src: "https://assets.tsb.co.nz/brands/monochroma/logos/light/logo.svg"; // White logo - used on dark backgrounds
+$asset-logo-light-xs-src: "https://assets.tsb.co.nz/brands/monochroma/logos/light/logo.svg"; // Mobile specific logo
+$asset-font-path: "https://assets.tsb.co.nz/fonts";
+$asset-favicon-path: "https://assets.tsb.co.nz/brands/monochroma/favicon";
+$asset-favicon-16x16: "https://assets.ctsb.co.nz/brands/monochroma/favicon/favicon-16x16.png";
+$asset-favicon-32x32: "https://assets.tsb.co.nz/brands/monochroma/favicon/favicon-32x32.png";
+$asset-favicon-android-chrome-192x192: "https://assets.tsb.co.nz/brands/monochroma/favicon/android-chrome-192x192.png";
+$asset-favicon-android-chrome-512x512: "https://assets.tsb.co.nz/brands/monochroma/favicon/android-chrome-512x512.png";
+$asset-favicon-apple-touch: "https://assets.tsb.co.nz/brands/monochroma/favicon/apple-touch-icon.png";
+$asset-favicon-ico: "https://assets.tsb.co.nz/brands/monochroma/favicon/favicon.ico";
+$asset-favicon-manifest: "https://assets.tsb.co.nz/brands/monochroma/favicon/site.webmanifest";
+$asset-icon-chroma-regular-url: "https://assets.tsb.co.nzm/icons/chroma/regular/icons.css";
+$asset-icon-chroma-light-url: "https://assets.tsb.co.nz/icons/chroma/light/icons.css";
+$asset-icon-chroma-solid-url: "https://assets.tsb.co.nz/icons/chroma/solid/icons.css";
+$asset-icon-platform-url: "https://assets.tsb.co.nz/icons/product/icons.css";
 $asset-icon-brand-url: "";
 $brand-name: monochroma;
 $color-background-white: #ffffff;
@@ -947,16 +947,16 @@ $link-inverse-active-color: #2163de;
 $link-inverse-disabled-background-color: #f4f7fd;
 $link-inverse-disabled-color: #7aa1eb;
 $loader-color: #383e44;
-$logo-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
+$logo-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/light/logo.svg);
 $logo-width: 168px;
 $logo-height: 38px;
-$logo-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
+$logo-xs-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/dark/logo.svg);
 $logo-xs-width: 168px;
 $logo-xs-height: 38px;
-$logo-light-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
-$logo-light-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/light/logo.svg);
-$logo-dark-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
-$logo-dark-xs-background: url(https://assets.chromadesignsystem.com/brands/monochroma/logos/dark/logo.svg);
+$logo-light-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/light/logo.svg);
+$logo-light-xs-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/light/logo.svg);
+$logo-dark-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/dark/logo.svg);
+$logo-dark-xs-background: url(https://assets.tsb.co.nz/brands/monochroma/logos/dark/logo.svg);
 $main-background-color: #ffffff;
 $message-font-family: 'Roboto', sans-serif;
 $message-font-size: 14px;
